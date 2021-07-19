@@ -18,18 +18,11 @@ from forms import LoginForm, BrandForm, ProductForm, SaleForm, CategoryForm, Ref
 
 app = Flask(__name__)
 
-app.config['MYSQL_HOST']='digitalpos.mysql.pythonanywhere-services.com'
+app.config['MYSQL_HOST']=''
 app.config['MYSQL_DATABASE_PORT'] = int(3306),
-app.config['MYSQL_USER']='digitalpos'
-app.config['MYSQL_PASSWORD']='Lahore@123'
-app.config['MYSQL_DB']='digitalpos$pos'
-
-
-# app.config['MYSQL_HOST']='localhost'
-# app.config['MYSQL_DATABASE_PORT'] = int(3306),
-# app.config['MYSQL_USER']='root'
-# app.config['MYSQL_PASSWORD']='Lahore@123'
-# app.config['MYSQL_DB']='pos'
+app.config['MYSQL_USER']=''
+app.config['MYSQL_PASSWORD']=''
+app.config['MYSQL_DB']=''
 
 
 mysql = MySQL(app)
